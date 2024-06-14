@@ -29,8 +29,7 @@ export async function build(opts){
     const app = fastify(opts);
 
     await app.register(cors, {
-        origin: true,
-        methods: ['GET', 'POST', 'PUT', 'DELETE']
+        origin: true
     })
 
     await app.register(jwt, {
