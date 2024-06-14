@@ -15,6 +15,6 @@ Abra [http://localhost:3000](http://localhost:3000) no seu navegador de preferê
 
 Após efetuar a navegação para o login, suas credências serão pedidas para que ocorra a autentificação acossiada com o backend antes de acessar a página com a listagem dos produtos.
 Para que essa autentificação ocorra corretamente basta inserir as seguintes informações:
-*Usuário:* `Maria`
-*Senha:* `Abcd@1234`
-Fazer o check do adimn.
+*Usuário:* `Maria` <br>
+*Senha:* `Abcd@1234` <br>
+Fazer o check do adimn. <br>
