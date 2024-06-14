@@ -17,4 +17,7 @@ Após efetuar a navegação para o login, suas credências serão pedidas para q
 Para que essa autentificação ocorra corretamente basta inserir as seguintes informações:
 *Usuário:* `Maria` <br>
 *Senha:* `Abcd@1234` <br>
-Fazer o check do adimn. <br>
+Fazer o check do admin. <br>
+Ao clicar no botão de acessar a navegação é validada de acordo com os parâmetros já estabelecidos no backend e é feito o fetch dos produtos presentes na API.
+
+## Página de *Produtos*
