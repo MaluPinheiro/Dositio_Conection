@@ -4,14 +4,14 @@ import { useState, useEffect } from 'react';
 
 interface Product {
   _id: string;
-  name: string;
+  nameProduct: string;
   qtd: number;
-  cat_id: string;
+  category: string;
 }
 
 interface Category {
-  _id: string;
   name: string;
+  img_url: string;
 }
 
 const Products = () => {
@@ -45,7 +45,7 @@ const Products = () => {
 
   const filteredProducts = selectedCategory === 'all'
     ? productList
-    : productList.filter(product => product.cat_id === selectedCategory);
+    : productList.filter(product => product.category === selectedCategory);
 
   return (
     <main className="flex flex-col items-center p-4 bg-violet-200 min-h-screen">
@@ -53,17 +53,17 @@ const Products = () => {
         <button onClick={() => filterProducts('all')} className="bg-purple-500 text-white py-2 px-4 m-2 rounded hover:bg-violet-800">Todos</button>
         {categoryList.map(category => (
           <button 
-            key={category._id} 
-            onClick={() => filterProducts(category._id)} 
+            key={category.name} 
+            onClick={() => filterProducts(category.name)} 
             className="bg-purple-500 text-white py-2 px-4 m-2 rounded hover:bg-violet-800">
             {category.name}
           </button>
         ))}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
-        {filteredProducts.map(({ _id, name, qtd }) => (
+        {filteredProducts.map(({ _id, nameProduct, qtd }) => (
           <div key={_id} className="bg-white border border-gray-300 rounded p-4 shadow-md">
-            <p className="text-xl font-semibold mb-2">{name}</p>
+            <p className="text-xl font-semibold mb-2">{nameProduct}</p>
             <p className="text-gray-600">Quantidade: {qtd}</p>
           </div>
         ))}
