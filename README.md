@@ -15,9 +15,12 @@ Abra [http://localhost:3000](http://localhost:3000) no seu navegador de preferê
 
 Após efetuar a navegação para o login, suas credências serão pedidas para que ocorra a autentificação acossiada com o backend antes de acessar a página com a listagem dos produtos.
 Para que essa autentificação ocorra corretamente basta inserir as seguintes informações:
+
 *Usuário:* `Maria` <br>
 *Senha:* `Abcd@1234` <br>
 Fazer o check do admin. <br>
+
 Ao clicar no botão de acessar a navegação é validada de acordo com os parâmetros já estabelecidos no backend e é feito o fetch dos produtos presentes na API.
 
 ## Página de *Produtos*
+Chegando na página de produtos temos a listagem dos mesmo, onde na opção **Todos** são listados todos produtos que existem na API, e logo após tem as opções de categorias da API onde, ao clicar, lista apenas os produtos que estão dentro da categoria selecionada.
