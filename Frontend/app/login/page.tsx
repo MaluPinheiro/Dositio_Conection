@@ -14,7 +14,7 @@ const Login = () => {
     }
 
     return (
-        <div className="flex justify-center items-center h-screen">
+        <div className="flex justify-center bg-violet-200 items-center h-screen">
             <div className="w-full max-w-md p-6 bg-white shadow-xl rounded-lg">
                 <form className="flex flex-col" onSubmit={handleSubmit(handleLogin)}>
                     <label htmlFor="name" className="mb-2">Usuário</label>

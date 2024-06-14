@@ -1,6 +1,4 @@
 "use client";
-
-import React from "react";
 import { createContext, useState } from "react";
 import { request } from '../services/request';
 import { setCookie } from 'nookies';
@@ -9,7 +7,7 @@ import { useRouter } from "next/navigation";
 export type SignIdData = {
     name: string;
     password: string;
-    admin: boolean;
+    admin: boolean
 }
 
 type AuthContextType = {
@@ -18,7 +16,7 @@ type AuthContextType = {
 }
 
 type UserAuthentication = {
-    'x-access-token': string;
+    'x-access-token': string
 }
 
 export const AuthContext = createContext({} as AuthContextType);
@@ -28,19 +26,14 @@ export default function AuthProvider({ children }: { children: React.ReactNode }
 
     const router = useRouter();
 
-    async function login({ name, password, admin }: SignIdData) {
+    async function login({ name, password }: SignIdData) {
         try {
-
-            console.log(name)
-            console.log(password)
-            console.log(admin)
-
-            const { 'x-access-token': token } = await request<UserAuthentication>('http://127.0.0.1:3000/login', {
+            const { 'x-access-token': token } = await request<UserAuthentication>('http://127.0.0.1:5000/auth', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ name, password, admin }),
+                body: JSON.stringify({ name, password }),
                 referrerPolicy: 'no-referrer',
                 cache: 'no-store'
             });
@@ -53,7 +46,6 @@ export default function AuthProvider({ children }: { children: React.ReactNode }
             setCookie(null, 'auth.token', token, {
                 maxAge: 60 * 60 * 1,
             });
-
             router.push('/product');
         } catch (error) {
             setAuthError('Ocorreu um erro ao tentar fazer login.');

@@ -8,28 +8,27 @@ const Home = ({ }) => {
             <div className="max-w-4xl h-full bg-white shadow-xl rounded-lg p-8">
                 <h1 className="text-3xl font-bold mb-6 text-center text-purple-800">Dositio</h1>
                 <section className="mb-6 overflow-y-auto max-h-96">
-                    <h2 className="text-2xl font-semibold mb-2 text-gray-800">O que é esta Aplicação?</h2>
+                    <h2 className="text-2xl font-semibold mb-2 text-gray-800">O que é Dosito?</h2>
                     <p className="text-gray-600">
-                        Esta aplicação permite que você explore a coleção de produtos de maneira fácil e rápida. Utilizamos uma API para gerenciar e listar todos os produtos disponíveis, garantindo que você tenha acesso às informações sobre nosso inventário.
+                        É uma aplicação que permite você navegar por uma lista produtos. Fizemos o uso de uma API para gerenciar e listar todos os produtos disponíveis.
                     </p>
                 </section>
                 <section className="mb-6 overflow-y-auto max-h-96">
-                    <h2 className="text-2xl font-semibold mb-2 text-gray-800">Funcionalidade Principal</h2>
-                    <h3 className="text-xl font-medium mb-2 text-gray-700">Listagem de Produtos</h3>
-                    <ul className="list-disc list-inside text-gray-600">
-                        <li><strong>Ver Todos os Produtos Disponíveis:</strong> Navegue pela lista completa de produtos que oferecemos. Cada produto é apresentado com seus detalhes essenciais, como nome, quantidade disponível e categoria.</li>
-                    </ul>
+                    <h2 className="text-2xl font-semibold mb-2 text-gray-800">Listagem de Produtos</h2>
+                    <p className="list-disc list-inside text-gray-600">
+                        <strong>Mostra uma lista com todos os Produtos Disponíveis na API:</strong> A listagem contém informações dos produtos, tais como: <strong>nome, quantidade e categoria.</strong>
+                    </p>
                 </section>
                 <section className="mb-6 overflow-y-auto max-h-96">
                     <h2 className="text-2xl font-semibold mb-2 text-gray-800">Como Funciona?</h2>
                     <p className="text-gray-600">
-                        A listagem de produtos é feita através de uma integração com nossa API, que coleta dados diretamente do nosso banco de dados e os exibe de maneira organizada e acessível.
+                        A listagem de produtos é feita através de uma integração com a API, que coleta dados diretamente do banco de dados e fazendo a exibição.
                     </p>
                 </section>
                 <section className="mb-6 overflow-y-auto max-h-96">
-                    <h2 className="text-2xl font-semibold mb-2 text-gray-800">Experimente Agora!</h2>
+                    <h2 className="text-2xl font-semibold mb-2 text-gray-800">Faça o login e confira!</h2>
                     <p className="text-gray-600">
-                        Explore a lista de produtos e encontre tudo o que você precisa com facilidade.
+                        Basta clicar e efetuar o login para começar a explorar a aplicação.
                     </p>
                 </section>
                 <div className='flex justify-end'>
