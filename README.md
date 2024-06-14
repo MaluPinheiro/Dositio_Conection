@@ -23,4 +23,4 @@ Fazer o check do admin. <br>
 Ao clicar no botão de acessar a navegação é validada de acordo com os parâmetros já estabelecidos no backend e é feito o fetch dos produtos presentes na API.
 
 ## Página de *Produtos*
-Chegando na página de produtos temos a listagem dos mesmo, onde na opção **Todos** são listados todos produtos que existem na API, e logo após tem as opções de categorias da API onde, ao clicar, lista apenas os produtos que estão dentro da categoria selecionada.
+Chegando na página de produtos temos a listagem com as informações dos mesmos, tais como **nome** e **quantidade** .Onde na opção **Todos** são listados todos produtos que existem na API, e logo após tem as opções de categorias da API onde, ao clicar, lista apenas os produtos que estão dentro da categoria selecionada. Sendo elas: *Frutas*, *Legumes*, e *Liquidos*.
