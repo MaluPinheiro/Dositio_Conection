@@ -2,7 +2,10 @@ Esse é um projeto [Next.js](https://nextjs.org/) com [`create-next-app`](https:
 
 ## Começando
 
-Baixe os arquivo do github e faça a instalação do node modules `npm install`.
+Baixe os arquivo do github e faça a instalação do node_modules: 
+```bash
+npm install
+```
 
 Depois, rode o servidor:
 ```bash
