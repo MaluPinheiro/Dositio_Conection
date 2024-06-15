@@ -4,8 +4,8 @@ Támbem a rota **register** que permite criar um novo usuário. Ambas foram feit
 
 -> Para que as rotas sejam conectadas corretamente deve-se criar uma arquivo `.env` com seguintes instruções:
 
-`STAGE = 'dev'`
-`PORT = 5000`
-`HOST = '127.0.0.1'`
-`JWT_SECRET = 'Abcd@1234'`
-`DB_URL = 'mongodb://127.0.0.1/dositio'`
+`STAGE = 'dev'`<br>
+`PORT = 5000` <br>
+`HOST = '127.0.0.1'` <br>
+`JWT_SECRET = 'Abcd@1234'` <br>
+`DB_URL = 'mongodb://127.0.0.1/dositio'` <br>
