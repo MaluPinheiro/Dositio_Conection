@@ -12,7 +12,7 @@ Depois, rode o servidor:
 npm run dev
 ```
 
-Abra [http://localhost:3000](http://localhost:3000) no seu navegador de preferência. Nessa página será mostrado a página incial, onde é feita a introdução da aplicação e logo após um uma navegação que direciona para página de login.
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador de preferência. Nessa página será mostrado a página incial, onde é feita a introdução da aplicação e logo após uma navegação que direciona para página de login.
 
 ## Página de *Login*
 
