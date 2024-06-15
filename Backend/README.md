@@ -1,5 +1,12 @@
 ## Implementação das rotas:
-Foi feito a rota **categorias** que permite fazer POST, GET (por id e produtos), PUT e DELETE;
+Foi feito a rota **categorias** que permite fazer POST, GET (por id e produtos), PUT e DELETE; <br>
 Támbem a rota **register** que permite criar um novo usuário. Ambas foram feitas dentro do critério de validação e armazenadas no banco de dados **Mongo db**.
 
 -> Para que as rotas sejam conectadas corretamente deve-se criar uma arquivo `.env` com seguintes instruções:
+`
+STAGE = 'dev'
+PORT = 5000
+HOST = '127.0.0.1'
+JWT_SECRET = 'Abcd@1234'
+DB_URL = 'mongodb://127.0.0.1/dositio'
+`
