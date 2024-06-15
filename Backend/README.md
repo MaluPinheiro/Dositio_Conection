@@ -1,6 +1,9 @@
 ## Para começar
-Baixe os arquivos do github;
-Faça a instalação do `node_modules`;
+Baixe os arquivos do github; <br>
+Faça a instalação do `node_modules` por meio do:
+```bash
+npm install
+```
 Inicie o servidor:
 ```bash
 npm run dev
